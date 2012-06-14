@@ -12,7 +12,7 @@ class db
     function __construct() {
         mysql_connect('ohm-db.local', 'dev', 'sl_dev');
         mysql_select_db('dev');
-        mysql_query('USE NAMES UTF8');
+        mysql_query('SET NAMES UTF8');
 }
 
     public static function getConnection() {
