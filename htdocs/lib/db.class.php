@@ -8,7 +8,21 @@
  */
 class db
 {
- public static function getConnection() {
+    private static $instance = NULL;
+    function __construct() {
+        mysql_connect('ohm-db.local', 'dev', 'sl_dev');
+        mysql_select_db('dev');
+        mysql_query('USE NAMES UTF8');
+}
 
- }
+    public static function getConnection() {
+        if (self::$instance == NULL) {
+         self::$instance = new db();
+        }
+        return self::$instance;
+    }
+
+    public function query($sQuery) {
+        return mysql_query($sQuery);
+    }
 }
