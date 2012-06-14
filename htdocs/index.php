@@ -11,5 +11,5 @@ $db = db::getConnection();
 $result = $db->query('select * from city');
 
 while ($city_array = mysql_fetch_array($result)){
-    echo "<a href='weather.php?id='.'$city_array[1]'.'>$city_array[2]</a><br>";
+    echo "<a href='weather.php?id='.$city_array[1].'>$city_array[2]</a><br>";
 }
