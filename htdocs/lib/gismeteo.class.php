@@ -33,6 +33,7 @@ class gismeteo
         if (preg_match('/Погода за окном.*?<dd class=\'value m_temp c\'>([+0-9]+).*?<dd class=\'value m_press torr\'>(\d+)/isu', $page, $m)) {
             $weather_array ['temperature'] = $m[1];
             $weather_array ['pressure'] = $m[2];
+            return $weather_array;
         }
     }
 }
