@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ad95663-1d0b-4336-97f3-5ac32f272f38" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
     </list>
     <ignored path="weather.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -306,7 +305,11 @@
       <created>1339689086903</created>
       <updated>1339689086903</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="методы созданы">
+      <created>1339689122191</created>
+      <updated>1339689122191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
