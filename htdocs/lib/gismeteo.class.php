@@ -9,15 +9,21 @@
 class gismeteo
 {
 
+    /**
+     * Функция возвращает ID города по его названию
+     * @param $sName string Название города
+     * @return int ИД города
+     */
     function getCityIdByName($sName) {
 
     }
 
     /**
-     * @param $iCityId
+     * Функция возвращает погоду для города
+     * @param $iCityId int ID города
      * @return array
-     * [temperature]
-     * [pressure]
+     * [temperature] - Температура
+     * [pressure] - давление
      */
     function getWeatherByCityId($iCityId) {
 
