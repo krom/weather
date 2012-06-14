@@ -8,4 +8,8 @@
  */
 require_once 'include.php';
 $db = db::getConnection();
-$db->query('select * from city');
+$result = $db->query('select * from city');
+
+while ($city_array = mysql_fetch_array($result)){
+    echo "<a href='weather.php?id='.'$city_array[1]'.'>$city_array[2]</a><br>";
+}
